@@ -9,9 +9,9 @@ namespace Catalog.API.Repositories
     {
         private readonly ICatalogContext _context;
 
-        public ProductRepository(ICatalogContext context)
+        public ProductRepository(ICatalogContext contexte)
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _context = contexte ?? throw new ArgumentNullException(nameof(contexte));
         }
 
         public async Task CreateProduct(Product product)
